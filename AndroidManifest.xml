@@ -333,6 +333,18 @@
             android:exported="true"
         />
 
+        <!-- ic_launcher_recentcall Added by ferhung-->
+        <activity-alias android:name="RecentCallsListActivity" 
+    		android:icon="@mipmap/ic_launcher_recentcall"
+    		android:label="@string/recentCallsIconLabel"
+    		android:targetActivity =".activities.DialtactsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
         <!-- Backwards compatibility: "Call log" from ICS -->
         <activity-alias android:name=".activities.CallLogActivity"
             android:targetActivity=".activities.DialtactsActivity"
